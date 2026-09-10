@@ -1,10 +1,25 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-        <title>DodoCare - Where We Care about Health</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+        <title>DodoCare - Health Care</title>
         <style> 
+        * {
+            font-family: Mulish, Arial;
+        }
+
+        body {
+            height: 3000px;
+        }
+
         .logo-t {
             color: white;
+            font-weight: 700;
             background-color: #488ef4;
             display: inline-flex;
             border-radius: 50%;
@@ -16,18 +31,233 @@
             margin: 0;
             padding: 0;
         }
+
+        .sublogo-t {
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        .logo-container {
+            margin-left: 14px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .header-container {
+            z-index: 100;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            height: 55px;
+            box-sizing: border-box;
+            background-color: rgb(247, 247, 247);
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .nav-container {
+            display: flex;
+            margin-right: 18px;
+            flex-direction: row;
+            flex-shrink: 0;
+            gap: clamp(12px, 3vw, 45px);
+        }
+
+        .header-nav-buttons {
+            color: grey;
+            user-select: none;
+        }
+
+        .header-nav-buttons:hover {
+            color: black;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .hero-image {
+            width: 320px;
+            margin-top: 130px;
+            margin-right: 3vw;
+            user-select: none;
+        }
+
+        .hero {
+            margin-left: 1vw;
+        }
+
+        .hero-text {
+            margin-top: 150px;
+            transform: scale(0.8);
+        }
+
+        .hero-consult-button {
+            background-color: #488ef4;
+            color: white;
+            border: none;
+            padding: 14px;
+            padding-left: 24px;
+            padding-right: 24px;
+            border-radius: 80px;
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+            transition: box-shadow 0.2s ease,
+                filter 0.08s ease;
+        }
+
+        @media (max-width: 500px) {
+            .hero {
+                margin-top: -80px;
+            }
+            .sublogo-t {
+                justify-content: center;
+                align-items: center;
+            }
+            .nav-container {
+                display: none;
+            }
+        }
+
+        @media (max-width: 650px) {
+            .hero-image {
+                width: 250px;
+                margin-top: 50px;
+            }
+            .hero {
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .hero-text {
+                transform: scale(0.85);
+            }
+        }
+
+        @media (min-width: 750px) {
+            .hero-image {
+                width: 380px;
+            }
+            .hero-text {
+                transform: scale(1.008);
+                margin-top: 200px;
+                margin-left: 30px;
+                margin-right: 70px;
+            }
+        }
+
+        @media (min-width: 1050px) {
+            .hero-image {
+                width: 450px;
+            }
+            .hero-text {
+                transform: scale(1.02);
+                margin-left: 30px;
+            }
+        }
+
+        @media (min-width: 1050px) {
+            .hero-image {
+                width: 450px;
+                margin-top: 170px;
+                margin-right: 70px;
+            }
+            .hero-text {
+                transform: scale(1.15);
+                margin-left: 90px;
+                margin-top: 250px;
+                width: 800px;
+                margin-right: 120px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .hero-image {
+                width: 500px;
+                margin-top: 150px ;
+            }
+            .hero-text {
+                transform: scale(1.4);
+                margin-left: 150px;
+                margin-top: 290px;
+                width: 700px;
+                margin-right: 110px;
+            }
+        }
+
+
+        @media (max-width: 300px) {
+            .hero {
+                margin-top: -90px;
+            }
+            .sublogo-t {
+                justify-content: center;
+                align-items: center;
+            }
+            .nav-container {
+                display: none;
+            }
+            .hero-image {
+                width: 170px;
+                margin-top: 20px;
+            }
+        }
+
+        .hero-consult-button:hover {
+            box-shadow: 0px 3px 6px 0px rgba(1, 1, 1, 0.4);
+        }
+
+        .hero-consult-button:active {
+            filter: brightness(70%);
+        }
+
+        .hero-description {
+            color: grey;
+        }
+
+        .dots-beautiful {
+            position: absolute;
+            top: 70px;
+            left: -41px;
+            /*margin-left: -45px;
+            margin-top: 70px;*/
+            width: 100px;
+        }
         </style>
     </head>
     <body> 
-        <div class="header-container"> 
-            <p class="logo-t">T</p>
-            <p class="sublogo-t">Trafalgar</p>
-            <nav>Home</nav>
-            <nav>Find A Doctor</nav>
-            <nav>Apps</nav>
-            <nav>IDK</nav>
-            <nav>About Us</nav>
-        </div>
+        <header class="header-container"> 
+            <div class="logo-container">
+                <p class="logo-t">T</p>
+                <p class="sublogo-t">Trafalgar</p>
+            </div>
+            <div class="nav-container">
+                <p class="header-nav-buttons">Home</p>
+                <p class="header-nav-buttons">Find A Doctor</p>
+                <p class="header-nav-buttons">Apps</p>
+                <p class="header-nav-buttons">IDK</p>
+                <p class="header-nav-buttons">About Us</p>
+            </div>
+        </header>
+
+        <section class="hero"> 
+
+            <img src="assets/dots.png" class="dots-beautiful">
+            <div class="hero-text">
+                <h1>Virtual healthcare for you</h1>
+                <p class="hero-description">Trafalgar provide progressive, and affordable healthcare, accessible on mobile and online for everyone.</p>
+                <button class="hero-consult-button">Consult today</button>
+            </div>
+
+            <img class="hero-image" src="assets/trafalgar-header illustration 1.svg">
+        </section>
         <script> 
 
         </script>
