@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html> 
+<html lang="en"> 
     <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -230,6 +230,144 @@
             margin-top: 70px;*/
             width: 100px;
         }
+
+        .black-rectangle {
+            font-weight: 700;
+            margin-top: 0;
+        }
+
+        .services {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .our-services {
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .service-description {
+            color: grey;
+            text-align: center;
+            margin-right: 12vw;
+            margin-left: 12vw;
+        }
+
+        .service-card {
+            background-color: white;
+            box-shadow: 0px 10px 18px 1px rgba(1, 1, 1, 0.08);
+            width: 200px;
+            height: 220px;
+            margin: 2vw;
+            border-radius: 16px;
+            padding-left: 14px;
+        }
+
+        .services-cards-grid-conatainer {
+            margin-top: 28px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .service-title {
+            font-weight: 700;
+        }
+
+        .service-card-description {
+            color: grey;
+            margin-top: -12px;
+            font-size: 14px;
+        }
+
+        .service-card-icon {
+            width: 40px;
+            margin-top: 22px;
+            margin-left: 10px;
+        }
+
+        .dots-in-services-grid {
+            position: absolute;
+            z-index: -1;
+            right: 2px;
+            width: 180px;
+            top: 959px;
+        }
+        
+        .dots-in-services-grid-2 {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 1035px;
+        }
+
+        .service-showmore-button {
+            margin-top: 60px;
+            background-color: white;
+            font-weight: 700;
+            border-style: solid;
+            border-radius: 50px;
+            padding: 12px;
+            padding-left: 28px;
+            padding-right: 28px;
+            color: #458ff6;
+            border-color: #458ff6;
+            transition: 0.1s;
+        }
+
+        .service-showmore-button:hover {
+            background-color: #458ff6;
+            color: white;
+        }
+
+        .service-showmore-button:active {
+            opacity: 60%;
+        }
+
+        .drip-drop-background-image {
+            position: absolute;
+            z-index: -2;
+            left: 0;
+            width: 500px;
+            opacity: 60%;
+        }
+
+        @media (min-width: 1200px) {
+            .drip-drop-background-image {
+                width: 670px;
+            }
+            .service-showmore-button {
+                transform: scale(1.4);
+            }
+            .services-cards-grid-conatainer {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1350px) {
+            .drip-drop-background-image {
+                width: 790px;
+            }
+        }
+
+        @media (min-width: 1500px) {
+            .drip-drop-background-image {
+                width: 990px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .services-cards-grid-conatainer {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .services-cards-grid-conatainer {
+                grid-template-columns: 1fr;
+            }
+        }
         </style>
     </head>
     <body> 
@@ -258,8 +396,60 @@
 
             <img class="hero-image" src="assets/trafalgar-header illustration 1.svg">
         </section>
-        <script> 
 
+        <section class="services"> 
+            <h3 class="our-services">Our Services</h3
+            <div class="black-rectangle">───</div>
+            <p class="service-description"> 
+                We provide to you the best choiches for you.
+                Adjust it to your health needs and make sure your undergo treatment 
+                with our highly qualified doctors you can consult with us which 
+                type of service is suitable for your health
+            </p>
+            <img class="dots-in-services-grid" src="assets/dots.png">
+            <div class="services-cards-grid-conatainer"> 
+                <div class="service-card"> 
+                    <img class="service-card-icon" src="assets/Frame (1).svg">
+                    <h3 class="service-title">Search doctor</h3>
+                    <p class="service-card-description">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                </div>
+
+                <div class="service-card"> 
+                    <img class="service-card-icon" src="assets/Frame.svg">
+                    <h3 class="service-title">Online pharmacy</h3>
+                    <p class="service-card-description">Buy  your medicines with our mobile application with a simple delivery system</p>
+                </div>
+
+                <div class="service-card"> 
+                    <img class="service-card-icon" src="assets/Frame (2).svg">
+                    <h3 class="service-title">Consultation</h3>
+                    <p class="service-card-description">Free consultation with our trusted doctors and get the best recomendations</p>
+                </div>
+
+                <div class="service-card"> 
+                    <img class="service-card-icon" src="assets/Frame (3).svg">
+                    <h3 class="service-title">Details info</h3>
+                    <p class="service-card-description">Free consultation with our trusted doctors and get the best recomendations</p>
+                </div>
+
+                <div class="service-card"> 
+                    <img class="service-card-icon" src="assets/Frame (5).svg">
+                    <h3 class="service-title">Emergency care</h3>
+                    <p class="service-card-description">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
+                </div>
+
+                <div class="service-card"> 
+                    <img class="service-card-icon" src="assets/Frame (4).svg">
+                    <h3 class="service-title">Tracking</h3>
+                    <p class="service-card-description">Track and save your medical history and health data </p>
+                </div>
+            </div>
+            <img class="drip-drop-background-image" src="assets/Vector.png">
+            <img class="dots-in-services-grid-2" src="assets/dots.png">
+            <button class="service-showmore-button">Show More</button>
+        </section>
+
+        <script> 
         </script>
     </body>
 </html>
