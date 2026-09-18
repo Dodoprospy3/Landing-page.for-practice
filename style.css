@@ -72,6 +72,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .hero-image {
@@ -188,10 +189,10 @@ body {
 
     .hero-text {
         transform: scale(1.4);
-        margin-left: 150px;
-        margin-top: 290px;
+        margin-left: 280px;
+        margin-top: 310px;
         width: 700px;
-        margin-right: 180px;
+        margin-right: 280px;
     }
 }
 
@@ -240,7 +241,7 @@ body {
 }
 
 .services {
-    margin-top: 80px;
+    margin-top: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,6 +332,22 @@ body {
     opacity: 60%;
 }
 
+.service-card {
+    animation: slideUp 1s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .drip-drop-background-image {
     position: absolute;
     z-index: -2;
@@ -406,7 +423,8 @@ body {
     margin-top: 128px;
     display: flex;
     flex-direction: row;
-    margin-left: 0;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .section-2-image {
@@ -459,26 +477,50 @@ body {
         width: 340px;
     }
     .section-2-left-section {
-        font-size: 12px;
+        font-size: 15px;
     }
     .section-2 {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 4vw;
+        margin-right: 4vw;
     }
 }
-@[
-;df';letter-spacing: A
-2lkOOJVKJapx;media (min-width: 1000px) {
+
+@media (min-width: 1000px) {
     .section-2 {
-        margin-left:38px;
-        margin-right: 38px;
-    
-djfksldjflkasjfks'dfj'k;sdfjasdkfjs'lf;4'';flex-grow: '1d1ad
+        margin-left: 8vw;
+        margin-right: 8vw;
+        font-size: 18px;
+    }
+}
 
+@media (max-width: 800px) {
+    .section-2-image {
+        width: 360px;
+    }
+}
 
-g'
-font-size: 
-display: font-size: sdf: easf: saf: sf: font-family: serif;
-;
+@media (max-width: 660px) {
+    .section-2-image {
+        width: 310px;
+    }
 
-vfd: ffg: dsfa: font-display: sfj;;;;;;;;;
+    .section-2-left-section {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 570px) {
+    .section-2-image {
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .section-2-left-section {
+        font-size: 16px;
+    }
+}
