@@ -6,6 +6,7 @@
 body {
     height: 3000px;
     margin-left: 0;
+    margin-right: 0;
 }
 
 .logo-t {
@@ -522,5 +523,34 @@ body {
 
     .section-2-left-section {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .drip-drop-background-image {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .services-cards-grid-conatainer {
+        width: 100%;
+    }
+
+    .service-card {
+        width: 200px;
+        max-width: calc(100vw - 40px);
+    }
+
+    .section-2 {
+        max-width: 100%;
+    }
+
+    .section-2-left-section {
+        max-width: 100%;
     }
 }
