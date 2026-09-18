@@ -234,6 +234,7 @@ body {
     top: 70px;
     left: -41px;
     width: 100px;
+    z-index: -99999;
 }
 
 .black-rectangle {
@@ -484,6 +485,10 @@ body {
         margin-left: 4vw;
         margin-right: 4vw;
     }
+
+    .section-3 {
+        flex-direction: row-reverse;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -492,11 +497,19 @@ body {
         margin-right: 8vw;
         font-size: 18px;
     }
+
+    .section-3 {
+        flex-direction: row-reverse;
+    }
 }
 
 @media (max-width: 800px) {
     .section-2-image {
         width: 360px;
+    }
+
+    .section-3 {
+        flex-direction: row-reverse;
     }
 }
 
@@ -511,18 +524,26 @@ body {
 }
 
 @media (max-width: 570px) {
+    .section-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
     .section-2-image {
         width: 260px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .section-2 {
-        flex-direction: column;
-    }
-
     .section-2-left-section {
         font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -544,13 +565,46 @@ body {
     .service-card {
         width: 200px;
         max-width: calc(100vw - 40px);
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .section-2 {
         max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .section-2-left-section {
         max-width: 100%;
     }
+}
+
+@media (max-width: 390px) {
+    .section-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-2-image {
+        width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-2-left-section {
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.section-3 {
+    margin-top: 28vh;
 }
