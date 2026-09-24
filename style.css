@@ -3,7 +3,13 @@
     box-sizing: border-box;
 }
 
+html {
+    color-scheme: light;
+}
+
 body {
+    background: white;
+    color: black;
     height: 3000px;
     margin-left: 0;
     margin-right: 0;
