@@ -10,7 +10,7 @@ html {
 body {
     background: white;
     color: black;
-    height: 3000px;
+    height: 4000px;
     margin-left: 0;
     margin-right: 0;
 }
@@ -612,5 +612,38 @@ body {
 }
 
 .section-3 {
-    margin-top: 28vh;
+    margin-top: 25vh;
+}
+
+.switchable-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17vh;
+}
+
+.the-actual-switchable {
+    width: 900px;
+    height: 425px;
+    border-radius: 24px;
+    background: linear-gradient(#64b7f3, #5a98f2);
+}
+
+.customer-saying-p {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 4%;
+    font-size: 38px;
+}
+
+.customer-saying-seperator {
+    font-size: 44px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    user-select: none;
+}
+
+.customer-say-left-section {
 }
