@@ -624,6 +624,7 @@ body {
 
 .the-actual-switchable {
     width: 70vw;
+    max-width: 1120px;
     height: 500px;
     border-radius: 24px;
     background: linear-gradient(#64b7f3, #5a98f2);
@@ -669,8 +670,8 @@ body {
 .customer-say-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-right: 48px;
-    margin-left: 48px;
+    margin-right: 6%;
+    margin-left: 6%;
 }
 
 .customer-say-name {
@@ -824,4 +825,186 @@ body {
 }
 
 @media (max-width: 666px) {
+    .the-actual-switchable {
+        height: 200px;
+    }
 
+    .customer-saying-p {
+        font-size: 18px;
+    }
+
+    .customer-details {
+        flex-direction: column;
+    }
+
+    .customer-saying-seperator {
+        font-size: 20px;
+    }
+
+    .customer-say-left-section {
+        gap: 16px;
+        margin-right: 4vw;
+    }
+
+    .customer-pfp {
+        width: 90px;
+        border-width: 3px;
+        margin-left: 0;
+    }
+
+    .customer-say-name {
+        font-size: 15px;
+    }
+
+    .customer-say-bio {
+        font-size: 12px;
+    }
+
+    .customer-say-message {
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .customer-say-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .the-actual-switchable {
+        height: 225px;
+    }
+
+    .customer-saying-p {
+        font-size: 18px;
+    }
+
+    .customer-details {
+        flex-direction: column;
+    }
+
+    .customer-saying-seperator {
+        font-size: 20px;
+    }
+
+    .customer-say-left-section {
+        gap: 16px;
+        margin-right: 4vw;
+    }
+
+    .customer-pfp {
+        width: 80px;
+        border-width: 3px;
+        margin-left: 0;
+    }
+
+    .customer-say-name {
+        font-size: 14px;
+    }
+
+    .customer-say-bio {
+        font-size: 12px;
+    }
+
+    .customer-say-message {
+        font-size: 10px;
+    }
+}
+
+/* 
+/////////////////////////////////////////////////
+IDK WHAT THIS QUERY DOES, BUT LEAVE IT ANYWAY ///
+/////////////////////////////////////////////////
+
+@media (max-width: 540px) {
+    .the-actual-switchable {
+        height: 200px;
+    }
+
+    .customer-saying-p {
+        font-size: 16px;
+    }
+
+    .customer-details {
+        flex-direction: column;
+    }
+
+    .customer-saying-seperator {
+        font-size: 20px;
+    }
+
+    .customer-say-left-section {
+        gap: 16px;
+        margin-right: 4vw;
+    }
+
+    .customer-pfp {
+        width: 80px;
+        border-width: 3px;
+        margin-left: 0;
+    }
+
+    .customer-say-name {
+        font-size: 14px;
+    }
+
+    .customer-say-bio {
+        font-size: 12px;
+    }
+
+    .customer-say-message {
+        font-size: 10px;
+    }
+
+    .customer-details {
+        flex-direction: row;
+    }
+}
+*/
+
+@media (max-width: 390px) {
+    .customer-say-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .the-actual-switchable {
+        height: 290px;
+    }
+
+    .customer-saying-p {
+        font-size: 18px;
+    }
+
+    .customer-details {
+        flex-direction: column;
+    }
+
+    .customer-saying-seperator {
+        font-size: 20px;
+    }
+
+    .customer-say-left-section {
+        gap: 16px;
+        margin-right: 4vw;
+    }
+
+    .customer-pfp {
+        width: 80px;
+        border-width: 3px;
+        margin-left: 0;
+    }
+
+    .customer-say-name {
+        font-size: 14px;
+    }
+
+    .customer-say-bio {
+        font-size: 12px;
+    }
+
+    .customer-say-message {
+        font-size: 14px;
+    }
+}
