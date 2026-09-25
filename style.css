@@ -623,8 +623,8 @@ body {
 }
 
 .the-actual-switchable {
-    width: 900px;
-    height: 425px;
+    width: 70vw;
+    height: 500px;
     border-radius: 24px;
     background: linear-gradient(#64b7f3, #5a98f2);
 }
@@ -637,6 +637,11 @@ body {
     font-size: 38px;
 }
 
+.customer-details {
+    display: flex;
+    flex-direction: column;
+}
+
 .customer-saying-seperator {
     font-size: 44px;
     text-align: center;
@@ -646,13 +651,19 @@ body {
 }
 
 .customer-say-left-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 6vw;
 }
 
 .customer-pfp {
     border-radius: 50%;
     border-style: solid;
+    width: 200px;
     border-width: 5px;
     border-color: white;
+    display: inline-block;
 }
 
 .customer-say-grid {
@@ -665,14 +676,152 @@ body {
 .customer-say-name {
     color: white;
     font-weight: 700;
-    font-size: 22px;
-    display: block;
-    position: absolute;
-    margin-top: auto;
-    margin-bottom: auto;
+    font-size: 32px;
+    margin: 0;
 }
 
 .customer-say-bio {
+    font-size: 28px;
     color: white;
-    margin-top: 28px;
+    margin: 4px 0 0;
 }
+
+.customer-say-message {
+    color: white;
+    font-size: 28px;
+}
+
+
+
+/*                                                           |
+ * DOWN HERE IS FOR RESPONSIVE DESIGN OF `switchable-cards` \/
+*/
+
+
+
+
+@media (max-width: 1200px) {
+    .the-actual-switchable {
+        height: 400px;
+    }
+
+    .customer-saying-p {
+        text-align: center;
+        margin: 0;
+        margin-top: 4%;
+        font-size: 28px;
+    }
+
+    .customer-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .customer-saying-seperator {
+        font-size: 34px;
+    }
+
+    .customer-say-left-section {
+        gap: 16px;
+        margin-right: 4vw;
+    }
+
+    .customer-pfp {
+        width: 200px;
+    }
+
+    .customer-say-name {
+        font-size: 32px;
+    }
+
+    .customer-say-bio {
+        font-size: 28px;
+    }
+
+    .customer-say-message {
+        font-size: 21px;
+    }
+
+}
+
+@media (max-width: 1055px) {
+    .the-actual-switchable {
+        height: 310px;
+    }
+
+    .customer-saying-p {
+        font-size: 24px;
+    }
+
+    .customer-details {
+        flex-direction: column;
+    }
+
+    .customer-saying-seperator {
+        font-size: 21px;
+    }
+
+    .customer-say-left-section {
+        gap: 16px;
+        margin-right: 3vw;
+    }
+
+    .customer-pfp {
+        width: 150px;
+    }
+
+    .customer-say-name {
+        font-size: 22px;
+    }
+
+    .customer-say-bio {
+        font-size: 18px;
+    }
+
+    .customer-say-message {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 830px) {
+    .the-actual-switchable {
+        height: 270px;
+    }
+
+    .customer-saying-p {
+        font-size: 24px;
+    }
+
+    .customer-details {
+        flex-direction: column;
+    }
+
+    .customer-saying-seperator {
+        font-size: 21px;
+    }
+
+    .customer-say-left-section {
+        gap: 16px;
+        margin-right: 3vw;
+    }
+
+    .customer-pfp {
+        width: 110px;
+    }
+
+    .customer-say-name {
+        font-size: 18px;
+    }
+
+    .customer-say-bio {
+        font-size: 14px;
+    }
+
+    .customer-say-message {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 666px) {
+
